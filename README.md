@@ -1,4 +1,7 @@
 # simpleSession requirements
+
+### bootstrap 4
+
 admin 
 name : admin
 pass: admin
@@ -41,9 +44,14 @@ enableEditing();
 - Session 
 - login();
 - logout();
+- login form
 ## Davide roles
 - addContact();
+- array contatti
+- new user form
 ## Federica roles
 - renderContacts();
+- card form
 ## ayoub roles
 - enableEditing();
+- index page
