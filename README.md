@@ -16,7 +16,9 @@ pass user
 
 ### session 
 
-name : session; values: admin|user
+name : session; 
+
+values: admin|user
 
 
 ### array 
@@ -29,7 +31,7 @@ email;
 
 tel;
 
-} in json
+} in *json*
 
 
 ### form login
