@@ -2,42 +2,72 @@
 
 ### bootstrap 4
 
-admin 
+### admin 
+
 name : admin
+
 pass: admin
 
-user
+### user
+
 name: user
+
 pass user
 
-array contatti {
-name;
-email;
-tel;
-} in json
+### session 
 
-form login
+name : session; 
+
+values: admin|user
+
+
+### array 
+
+contatti {
+
+name;
+
+email;
+
+tel;
+
+} in *json*
+
+
+### form login
 
 name id: userId
+
 pass id : userPass
+
 login btn: id: loginBtn
+
 logout btn id: logoutBtn
 
-new user form
+
+### new user form
 
 name: contactName
+
 email: contactMail
+
 tel: contactTel
+
 add btn id: newUserBtn
 
-contact card
+
+### contact card
 // dumb
 
-methods:
+### methods:
 login();
+
 logout();
+
 addContact();
+
 renderContacts();
+
 enableEditing();
 
 ## Giacomo roles 
