@@ -16,58 +16,43 @@ pass user
 
 ### session 
 
-name : session; 
-
-values: admin|user
+name : session; values: admin|user
 
 
 ### array 
 
 contatti {
-
 name;
 
 email;
 
 tel;
 
-} in *json*
+} in json
 
 
 ### form login
 
 name id: userId
-
 pass id : userPass
-
 login btn: id: loginBtn
-
 logout btn id: logoutBtn
-
 
 ### new user form
 
 name: contactName
-
 email: contactMail
-
 tel: contactTel
-
 add btn id: newUserBtn
-
 
 ### contact card
 // dumb
 
 ### methods:
 login();
-
 logout();
-
 addContact();
-
 renderContacts();
-
 enableEditing();
 
 ## Giacomo roles 

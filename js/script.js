@@ -32,9 +32,9 @@ function login(){
         }
     }
 }
-function logout(){
 
-    if (session in localStorage) {
+function logout(){
+    if ( session in localStorage) {
         try {
             localStorage.removeItem(session); 
             
@@ -46,6 +46,7 @@ function logout(){
     } 
      
 }
+
 function addContact(){
     if (contactName.value.trim() != "" && contactMail.value.trim() != "" && contactTel.value.trim() != "") {
         var newContatto = {
@@ -61,8 +62,11 @@ function addContact(){
 
     }
 }
+
 function renderContacts(){
+
 }
+
 function enableEditing(){
     if(Modernizr.localstorage){
         if(localStorage.getItem("session") == "admin"){
@@ -74,3 +78,10 @@ function enableEditing(){
     }
 }
 
+if (isSupportato()) {
+    console.log("I local e session sono supportati");
+}
+
+//Controllo su utente loggato
+// sessionStorage.removeItem
+// (sessionStorage.loggedIn) ? console.log("Sei loggato") : console.log("Sei offline");
