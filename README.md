@@ -22,6 +22,7 @@ name : session; values: admin|user
 ### array 
 
 contatti {
+
 name;
 
 email;
