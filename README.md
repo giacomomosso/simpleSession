@@ -14,7 +14,7 @@ array contatti {
 name;
 email;
 tel;
-}
+} in json
 
 form login
 
