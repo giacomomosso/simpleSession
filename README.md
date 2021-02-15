@@ -58,9 +58,13 @@ add btn id: newUserBtn
 
 ### methods:
 login();
+
 logout();
+
 addContact();
+
 renderContacts();
+
 enableEditing();
 
 ## Giacomo roles 
