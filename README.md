@@ -14,7 +14,7 @@ array contatti {
 name;
 email;
 tel;
-}
+} in json
 
 form login
 
@@ -44,7 +44,7 @@ enableEditing();
 - Session 
 - login();
 - logout();
-- login form
+- index page
 ## Davide roles
 - addContact();
 - array contatti
@@ -54,4 +54,4 @@ enableEditing();
 - card form
 ## ayoub roles
 - enableEditing();
-- index page
+- login form
