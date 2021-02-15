@@ -17,6 +17,17 @@ function login(){
     }
 }
 function logout(){
+
+    if ( session in localStorage) {
+        try {
+            localStorage.removeItem(session); 
+            
+        } catch (error) {
+            console.log("session error 2");
+        }
+    } else {
+        console.log("session error 2");
+    } 
      
 }
 function addContact(){
@@ -45,4 +56,4 @@ if (isSupportato()) {
 
 //Controllo su utente loggato
 // sessionStorage.removeItem
-(sessionStorage.loggedIn) ? console.log("Sei loggato") : console.log("Sei offline");;
+(sessionStorage.loggedIn) ? console.log("Sei loggato") : console.log("Sei offline");
