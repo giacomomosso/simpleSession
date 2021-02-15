@@ -38,6 +38,12 @@ renderContacts();
 enableEditing();
 
 ## Giacomo roles 
+- Session 
+- login();
+- logout();
 ## Davide roles
+- addContact();
 ## Federica roles
+- renderContacts();
 ## ayoub roles
+- enableEditing();
