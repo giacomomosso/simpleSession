@@ -6,6 +6,8 @@ var contactName = document.getElementById('contactName');
 var contactMail = document.getElementById('contactMail');
 var contactTel = document.getElementById('contactTel');
 var newUserBtn = document.getElementById('newUserBtn');
+var form1 = document.getElementById("form1");
+var form2 = document.getElementById("form2");
 
 var contatti = [];
 if (localStorage.getItem('contatti') != null) {
@@ -15,7 +17,6 @@ if (localStorage.getItem('contatti') != null) {
 loginBtn.addEventListener('click', login, false);
 logoutBtn.addEventListener('click', logout, false);
 newUserBtn.addEventListener('click', addContact, false);
-
 
 function login(){
     if (Modernizr.localstorage) {
@@ -33,7 +34,6 @@ function login(){
 }
 
 function logout(){
-
     if ( session in localStorage) {
         try {
             localStorage.removeItem(session); 
