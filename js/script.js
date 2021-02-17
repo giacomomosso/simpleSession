@@ -37,14 +37,12 @@ function logout(){
     if ( session in localStorage) {
         try {
             localStorage.removeItem(session); 
-            
         } catch (error) {
             console.log("session error 2");
         }
     } else {
         console.log("session error 2");
     } 
-     
 }
 
 function addContact(){
@@ -59,7 +57,6 @@ function addContact(){
         // console.log(JSON.stringify(newContatto));
         localStorage.setItem('contatti', JSON.stringify(contatti));
     } else {
-
     }
 }
 
@@ -70,8 +67,6 @@ function renderContacts(){
 function enableEditing(){
     if(Modernizr.localstorage){
         if(localStorage.getItem("session") == "admin"){
-
-            
             form1.hidden = true;
             form2.hidden = false;
         }
