@@ -72,11 +72,3 @@ function enableEditing(){
         }
     }
 }
-
-if (isSupportato()) {
-    console.log("I local e session sono supportati");
-}
-
-//Controllo su utente loggato
-// sessionStorage.removeItem
-// (sessionStorage.loggedIn) ? console.log("Sei loggato") : console.log("Sei offline");
