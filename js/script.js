@@ -6,6 +6,7 @@ var contactName = document.getElementById('contactName');
 var contactMail = document.getElementById('contactMail');
 var contactTel = document.getElementById('contactTel');
 var newUserBtn = document.getElementById('newUserBtn');
+var cardContainer = document.getElementById("cardContainer");
 var form1 = document.getElementById("form1");
 var form2 = document.getElementById("form2");
 var form3 = document.getElementById("form3");
@@ -76,8 +77,9 @@ function addContact(){
 }
 
 function renderContacts(){
+
+    cardContainer.innerHTML = "";
     var data = JSON.parse(localStorage.getItem('contatti'));
-    var cardContainer = document.getElementById("cardContainer");
     
     for(var obj of data) {
         
