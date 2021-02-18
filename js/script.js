@@ -73,17 +73,22 @@ function addContact(){
 }
 
 function renderContacts(){
-    var data = localStorage.getItem('contatti');
-    JSON.parse(contatti)
+    var data = JSON.parse(localStorage.getItem('contatti'));
+    var cardContainer = document.getElementById("cardContainer");
     
-    var name=document.getAttribute("list-group-itel1").innerHTML
-    var email=document.getAttribute("list-group-item2").innerHTML
-    var tel=document.getAttribute("list-group-item3").innerHTML
-    
-    data.forEach(contactName =>  {name += contactName.value });
-    data.forEach(contactMail => {email += contactMail.value });
-    data.forEach(contactTel => {tel += contactTel.value });
-
+    for(var obj of data) {
+        
+        console.log(obj);
+        
+        cardContainer.innerHTML+=
+        '<div class="card" style="width: 18rem;">'+
+            '<ul class="list-group list-group-flush">'+
+                '<li class="list-group-item1">'+obj.name+'</li>'+
+                '<li class="list-group-item2">'+obj.email+'</li>'+
+                '<li class="list-group-item2">'+obj.tel+'</li>'+
+            '</ul>'+
+        '</div>';
+    }
 }
 
 function reload(){
