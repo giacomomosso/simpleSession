@@ -31,6 +31,7 @@ function login(){
             localStorage.setItem('session',"admin");
             console.log("logged: "+localStorage.getItem('session'));
             form3.hidden = false;
+            form2.hidden = false;
             enableEditing();
         }
     
