@@ -38,6 +38,7 @@ function login(){
             localStorage.setItem('session', "user" );
             console.log("logged: "+localStorage.getItem('session'));
             form3.hidden = false;
+            form1.hidden = true;
         }
     }
 }
