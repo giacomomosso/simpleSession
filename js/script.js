@@ -27,7 +27,7 @@ function login(){
         var password = document.getElementById('userPass').value;
         
 
-        if(user=="admin"&&password=="admin"){
+        if(user=="admin"&&password=="admin" || localStorage.getItem('session') == 'admin'){
             localStorage.setItem('session',"admin");
             console.log("logged: "+localStorage.getItem('session'));
             form3.hidden = false;
@@ -35,7 +35,7 @@ function login(){
             enableEditing();
         }
     
-        if(user=="user"&&password=="user"){
+        if(user=="user"&&password=="user" || localStorage.getItem('session') == 'user'){
             localStorage.setItem('session', "user" );
             console.log("logged: "+localStorage.getItem('session'));
             form3.hidden = false;
@@ -70,6 +70,7 @@ function addContact(){
 
         localStorage.setItem('contatti', JSON.stringify(contatti));
         console.log(localStorage.getItem('contatti'));
+        renderContacts();
     } else {
     }
 }
