@@ -1,5 +1,44 @@
+body {
+    width: 70%;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+}
+
 .card{
     border: 1px solid;
     width: 100px;
     text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+.card {
+
+    margin: 1rem 0;
+}
+
+.card:hover {
+    background-color: rgba(165, 42, 42, 0.521);
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 30rem;
+}
+
+.form2 {
+    width: 1rem !important;
+}
+
+form > div {
+margin: 0!important;
 }
